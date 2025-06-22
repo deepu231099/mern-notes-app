@@ -8,10 +8,6 @@ jobs:
   build-frontend:
     name: 🐳 Build & Push Frontend Docker Image
     runs-on: ubuntu-latest
-    if: |
-      contains(toJson(github.event.commits.*.modified), 'frontend-view/') ||
-      contains(toJson(github.event.commits.*.added), 'frontend-view/') ||
-      contains(toJson(github.event.commits.*.removed), 'frontend-view/')
     steps:
       - name: 🧾 Checkout code
         uses: actions/checkout@v3
@@ -34,10 +30,6 @@ jobs:
   build-backend:
     name: 🐳 Build & Push Backend Docker Image
     runs-on: ubuntu-latest
-    if: |
-      contains(toJson(github.event.commits.*.modified), 'backend-app/') ||
-      contains(toJson(github.event.commits.*.added), 'backend-app/') ||
-      contains(toJson(github.event.commits.*.removed), 'backend-app/')
     steps:
       - name: 🧾 Checkout code
         uses: actions/checkout@v3

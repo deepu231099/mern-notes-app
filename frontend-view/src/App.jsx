@@ -8,7 +8,7 @@ import "./App.css";
 function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+      <div className="min-h-screen bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
         <Navbar />
         <div className="flex h-[calc(100vh-72px)] overflow-hidden">
           <aside className="w-64 hidden md:block border-r bg-white dark:bg-gray-800 dark:border-gray-700 shadow-sm">
